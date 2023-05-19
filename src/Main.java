@@ -1,3 +1,4 @@
+import Classes.FollowResearchers.FollowResearchers;
 import Classes.Login.Login;
 import Classes.Login.LoginForm;
 import Classes.PaperDownload.PDownload;
@@ -23,8 +24,12 @@ public class Main {
             // pDownload.displayPDownloadForm();
 
             //USER READING LIST
-            UserReadingList userReadingList = new UserReadingList();
-            userReadingList.displayUserReadingForm();
+            // UserReadingList userReadingList = new UserReadingList();
+            // userReadingList.displayUserReadingForm();
+
+            //FOLLOW RESEARCHER
+            FollowResearchers followResearchers = new FollowResearchers();
+            followResearchers.displayFollowResearchersForm();
 
 
         } catch (IOException e) {

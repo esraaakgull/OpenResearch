@@ -1,11 +1,11 @@
-package Classes.UserReadingList;
+package Classes.FollowResearchers;
 
-import Classes.PaperDownload.PaperDownloadForm;
+import Classes.UserReadingList.ReadingListForm;
 
 import javax.swing.*;
 
-public class UserReadingList {
-    public void displayUserReadingForm() {
+public class FollowResearchers {
+    public void displayFollowResearchersForm() {
         try {
             UIManager.setLookAndFeel(UIManager.getLookAndFeel());
         } catch (UnsupportedLookAndFeelException e) {
@@ -14,8 +14,8 @@ public class UserReadingList {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                ReadingListForm readingListForm = new ReadingListForm();
-                readingListForm.setVisible(true);
+                FollowResearchersForm followResearchersForm = new FollowResearchersForm();
+                followResearchersForm.setVisible(true);
             }
         });
     }
