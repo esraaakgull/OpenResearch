@@ -60,13 +60,10 @@ public class BibReader {
                             String[] authorSplit = getTextBetweenTwoCharacters(lineSplit[1], "{", "}").split(",");
                             authors.addAll(Arrays.asList(authorSplit));
                         }
-                        // taking title
+                        // taking title, year, doi, booktitle
                         case "title " -> title = getTextBetweenTwoCharacters(lineSplit[1], "{", "}");
-                        // taking year
                         case "year " -> year = getTextBetweenTwoCharacters(lineSplit[1], "{", "}");
-                        //taking doi
                         case "doi " -> doi = getTextBetweenTwoCharacters(lineSplit[1], "{", "}");
-                        // taking bookTitle
                         case "booktitle " -> bookTitle = getTextBetweenTwoCharacters(lineSplit[1], "{", "}");
                     }
                 }
