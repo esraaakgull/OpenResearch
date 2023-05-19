@@ -1,3 +1,5 @@
 ﻿# OpenResearch
- ![image](https://github.com/esraaakgull/OpenResearch/assets/94448231/6446a1da-abef-44e8-ba68-89a7e211d241)
+ # Login Page Design
+![image](https://github.com/esraaakgull/OpenResearch/assets/94448231/6346ab05-32c4-400f-aa5a-d5934dbbded1)
+
 
