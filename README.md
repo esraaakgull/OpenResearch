@@ -7,3 +7,6 @@
 
 ## UserReadingList Page Design
 ![image](https://github.com/esraaakgull/OpenResearch/assets/94448231/0a402a5c-bf9f-497b-8483-dfecc27f454f)
+
+## Follow Researchers Form Design
+![image](https://github.com/esraaakgull/OpenResearch/assets/94448231/074cea10-d0e8-47a9-8a4f-36236421a767)
