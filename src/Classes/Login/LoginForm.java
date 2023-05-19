@@ -6,17 +6,17 @@ import java.awt.event.ActionListener;
 
 public class LoginForm extends JFrame {
 
-    private JPanel panel1;
+    private JPanel loginPanel;
     private JTextField password;
     private JTextField username;
-    private JButton LoginButton;
+    private JButton loginButton;
 
     public LoginForm() {
-        add(panel1);
+        add(loginPanel);
         setSize(400, 200);
         setTitle("OpenResearch");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        LoginButton.addActionListener(new ActionListener() {
+        loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String formUsername, formPassword;
