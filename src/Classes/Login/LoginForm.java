@@ -13,13 +13,16 @@ public class LoginForm extends JFrame {
 
     public LoginForm() {
         add(panel1);
-        setSize(400,200);
+        setSize(400, 200);
         setTitle("OpenResearch");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         LoginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String formUsername, formPassword;
+                formUsername = username.getText();
+                formPassword = password.getText();
+                System.out.println(formUsername + " " + formPassword);
             }
         });
     }
