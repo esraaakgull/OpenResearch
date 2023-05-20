@@ -3,6 +3,7 @@ package Classes.Interfaces.UserReadingList;
 import Classes.Interfaces.ReadingListObserver;
 import Classes.Paper;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +17,20 @@ public class ReadingList {
         observers = new ArrayList<>();
     }
 
+    public void displayUserReadingForm() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getLookAndFeel());
+        } catch (UnsupportedLookAndFeelException e) {
+            throw new RuntimeException(e);
+        }
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                ReadingListForm readingListForm = new ReadingListForm();
+                readingListForm.setVisible(true);
+            }
+        });
+    }
     public void addObserver(ReadingListObserver observer) {
         observers.add(observer);
     }

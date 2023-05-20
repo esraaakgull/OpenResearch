@@ -1,9 +1,9 @@
-package Classes.Interfaces.PaperDownload;
+package Classes.Interfaces.Dashboard;
 
 import javax.swing.*;
 
-public class PDownload {
-    public void displayPDownloadForm() {
+public class OpenResearcherGUI {
+    public void displayOpenResearcherGUIForm() {
 
         try {
             UIManager.setLookAndFeel(UIManager.getLookAndFeel());
@@ -13,10 +13,9 @@ public class PDownload {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                PaperDownloadForm paperDownloadForm = new PaperDownloadForm();
-                paperDownloadForm.setVisible(true);
+                OpenResearcherGUIForm openResearcherGUIForm = new OpenResearcherGUIForm();
+                openResearcherGUIForm.setVisible(true);
             }
         });
     }
-
 }
