@@ -1,43 +1,22 @@
-import Classes.FollowResearchers.FollowResearchers;
-import Classes.Login.Login;
-import Classes.Login.LoginForm;
-import Classes.PaperDownload.PDownload;
-import Classes.UserReadingList.UserReadingList;
-import FileIO.BibReader;
+import Classes.OpenResearchGUI;
+import Classes.Papers.Paper;
+import FileIO.BIBParser;
+import FileIO.CSVGenerator;
 
-import java.io.IOException;
+import javax.swing.*;
+import java.io.FileNotFoundException;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        try {
-            BibReader bibReader = new BibReader("src/Assets/Papers");
-           // bibReader.getFiles();
-           // bibReader.printArticleFilesDetail();
-           // bibReader.printConferenceFilesDetail();
+    public static void main(String[] args) throws FileNotFoundException {
+        // Parse BIB files and generate papers.csv
+        List<Paper> papers = BIBParser.parseBIBFiles("src/Assets/Papers");
+        CSVGenerator.generateCSV(papers);
 
-            //LOGIN
-            // Login login = new Login();
-            // login.displayLoginForm();
-
-            //DOWNLOAD PAPER
-            // PDownload pDownload = new PDownload();
-            // pDownload.displayPDownloadForm();
-
-            //USER READING LIST
-            // UserReadingList userReadingList = new UserReadingList();
-            // userReadingList.displayUserReadingForm();
-
-            //FOLLOW RESEARCHER
-            FollowResearchers followResearchers = new FollowResearchers();
-            followResearchers.displayFollowResearchersForm();
-
-
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-        catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        // Launch the GUI
+        SwingUtilities.invokeLater(() -> {
+            OpenResearchGUI gui = new OpenResearchGUI();
+            gui.show();
+        });
     }
 }
