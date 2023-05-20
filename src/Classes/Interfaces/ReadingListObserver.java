@@ -1,6 +1,6 @@
 package Classes.Interfaces;
 
-import Classes.UserReadingList.ReadingList;
+import Classes.Interfaces.UserReadingList.ReadingList;
 
 public interface ReadingListObserver {
     void updateReadingList(ReadingList readingList);

@@ -1,5 +1,5 @@
 import Classes.OpenResearchGUI;
-import Classes.Papers.Paper;
+import Classes.Paper;
 import FileIO.BIBParser;
 import FileIO.CSVGenerator;
 

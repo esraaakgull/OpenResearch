@@ -1,9 +1,8 @@
 package Classes;
 
 import Classes.Interfaces.OpenResearchObserver;
-import Classes.Papers.Paper;
-import Classes.UserReadingList.ReadingList;
-import Classes.UserReadingList.ReadingListForm;
+import Classes.Interfaces.UserReadingList.ReadingList;
+import Classes.Interfaces.UserReadingList.ReadingListForm;
 
 import javax.swing.*;
 import java.util.ArrayList;

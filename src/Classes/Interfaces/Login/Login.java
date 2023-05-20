@@ -1,11 +1,9 @@
-package Classes.PaperDownload;
-
-import Classes.Login.LoginForm;
+package Classes.Interfaces.Login;
 
 import javax.swing.*;
 
-public class PDownload {
-    public void displayPDownloadForm() {
+public class Login {
+    public void displayLoginForm() {
 
         try {
             UIManager.setLookAndFeel(UIManager.getLookAndFeel());
@@ -15,8 +13,8 @@ public class PDownload {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                PaperDownloadForm paperDownloadForm = new PaperDownloadForm();
-                paperDownloadForm.setVisible(true);
+                LoginForm login = new LoginForm();
+                login.setVisible(true);
             }
         });
     }

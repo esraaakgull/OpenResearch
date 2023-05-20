@@ -1,4 +1,4 @@
-package Classes.PaperDownload;
+package Classes.Interfaces.PaperDownload;
 
 import javax.swing.*;
 

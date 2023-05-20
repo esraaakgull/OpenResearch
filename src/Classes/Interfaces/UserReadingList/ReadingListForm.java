@@ -1,4 +1,4 @@
-package Classes.UserReadingList;
+package Classes.Interfaces.UserReadingList;
 
 import javax.swing.*;
 

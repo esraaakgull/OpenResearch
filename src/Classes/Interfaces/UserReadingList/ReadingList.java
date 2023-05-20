@@ -1,15 +1,14 @@
-package Classes.UserReadingList;
+package Classes.Interfaces.UserReadingList;
 
 import Classes.Interfaces.ReadingListObserver;
-import Classes.Papers.Paper;
+import Classes.Paper;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReadingList {
 
-    private List<Classes.Papers.Paper> papers;
+    private List<Paper> papers;
     private List<ReadingListObserver> observers;
 
     public ReadingList() {
@@ -25,7 +24,7 @@ public class ReadingList {
         observers.remove(observer);
     }
 
-    public void addPaper(Classes.Papers.Paper paper) {
+    public void addPaper(Paper paper) {
         papers.add(paper);
         notifyObservers();
     }

@@ -1,4 +1,4 @@
-package Classes.Login;
+package Classes.Interfaces.Login;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

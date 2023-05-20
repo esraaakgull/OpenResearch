@@ -1,4 +1,4 @@
-package Classes.Papers;
+package Classes;
 
 public class Paper {
     private String type;

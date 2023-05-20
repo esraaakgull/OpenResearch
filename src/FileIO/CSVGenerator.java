@@ -1,6 +1,6 @@
 package FileIO;
 
-import Classes.Papers.Paper;
+import Classes.Paper;
 
 import java.io.File;
 import java.io.IOException;
